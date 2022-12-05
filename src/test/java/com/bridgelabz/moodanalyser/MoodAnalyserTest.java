@@ -7,8 +7,8 @@ import org.junit.*;
 public class MoodAnalyserTest {
 
 	 @Test
-	    public void given_SadMood_Should_Return_Sad() {
-	        MoodAnalyser moodAnalyser = new MoodAnalyser("I am in any Mood");
+	    public void givenNullMoodShouldReturnHappy() {
+	        MoodAnalyser moodAnalyser = new MoodAnalyser(null);
 	        String mood = moodAnalyser.analyseMood();
 	        Assert.assertEquals("HAPPY", mood);
 	 }	 
